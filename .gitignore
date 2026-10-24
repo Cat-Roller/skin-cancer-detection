@@ -1,0 +1,51 @@
+# Python / Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Streamlit Cache
+.streamlit/
+
+# Testing & Linting Caches
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# OS & IDE Specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Data Files & CSVs
+*.csv
+*.zip
+*.tar.gz
+data/
+datasets/
+images/
+uploads/
+
+# Model Weights & Large Binaries 
+*.h5
+*.keras
+*.pkl
+clean_models/
+models/
+
+
+mlruns/
