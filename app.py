@@ -20,16 +20,24 @@ st.write("Upload multiple lesion images (named by their `isic_id`) and a batch C
 @st.cache_resource
 def load_artifacts():
     models_dict = {}
+    
+    # Check if local absolute path exists 
+    if os.path.exists(r"C:\clean_models"):
+        base_path = r"C:\clean_models"
+    else:
+        base_path = "clean_models"
+
     model_paths = {
-        "Baseline MobileNetV2": r"C:\clean_models\baseline_mobilenetv2",
-        "ResNet50 Multimodal": r"C:\clean_models\resnet50_multimodal",
-        "Research EfficientNetB0": r"C:\clean_models\research_efficientnetb0"
+        "Baseline MobileNetV2": os.path.join(base_path, "baseline_mobilenetv2"),
+        "ResNet50 Multimodal": os.path.join(base_path, "resnet50_multimodal"),
+        "Research EfficientNetB0": os.path.join(base_path, "research_efficientnetb0")
     }
+    
     for name, path in model_paths.items():
         if os.path.exists(path):
             models_dict[name] = tf.keras.models.load_model(path)
             
-    scaler_path = r"C:\clean_models\scaler.pkl"
+    scaler_path = os.path.join(base_path, "scaler.pkl")
     scaler = None
     if os.path.exists(scaler_path):
         with open(scaler_path, "rb") as f:
