@@ -48,7 +48,9 @@ Open your browser and navigate to http://localhost:8501
 📚References & Research Background
 This project draws upon established deep learning architectures and dermatological research:
 
-Skin Cancer Detection & Deep Learning Overview:
+EfficientNet arcitecture:
+The main research i used was the
+Advanced skin cancer detection through deep learning and fusion of patient metadata and skin lesion images(2026 january)
 
 Explorations into deep learning architectures for automated skin lesion classification, such as frameworks outlined in literature reviewing computer-aided dermatological diagnosis.
 
