@@ -1,6 +1,6 @@
 # 🩺 Multimodal Ensemble Skin Cancer Detection Pipeline
 
-A production-ready, containerized Streamlit web application for automated skin lesion classification and risk assessment using a multi-model deep learning ensemble (MobileNetV2, ResNet50, and EfficientNetB0) combined with tabular clinical features.
+A ready, containerized Streamlit web application for automated skin lesion classification and risk assessment using a multi-model deep learning ensemble (MobileNetV2, ResNet50, and EfficientNetB0) combined with tabular clinical features.
 
 ---
 
